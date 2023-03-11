@@ -10,17 +10,12 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DirectoryComponent implements OnInit {
 
-    classes={'blue': true, 'red': false, 'underline': true}
-    test: boolean = false
 
-   clickHandler(){
-    if(this.test){
-      this.test = false
-    }else{
-      this.test = true
-    }
-   }
-     
+    ninjas = [
+      {name: "Yoshi", belt: "black"},
+      {name: "Berna", belt: "white"},
+      {name: "Kovács", belt: "szuper-black"},
+    ]
 
     constructor(){
      

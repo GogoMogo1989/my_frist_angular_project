@@ -1,14 +1,5 @@
-<p [ngClass]="classes">
-    directory works!
-</p>
+<h2>Ninja Listening</h2>
 
-
-<p *ngIf="test">only show the test is true</p>
-
-<button (click)="clickHandler()">Click</button>
-
-<style>
-    .blue{color:blue}
-    .red{color:red}
-    .underline{text-decoration: underline;}
-</style>
+<ul id="ninja-listing">
+    <li *ngFor = "let ninja of ninjas">{{ninja.name}}</li>
+</ul>
