@@ -8,14 +8,4 @@ import {RouterModule, Routes} from '@angular/router'
 })
 export class AppComponent {
   title = 'my-app, woop wopp';
-  name='ninja';
-  ninja ={
-    name: "ryu",
-    belt: "red"
-  }
-
-  yell(e: any){
-    alert("i am yelling")
-    console.log(e)
-  }
 }

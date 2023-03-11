@@ -7,12 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-  {path : 'directory/:ninja' , component : DirectoryComponent},
-  {path : 'directory' , component : DirectoryComponent},
-  {path :'', component : HomeComponent}
-
-];
 
 @NgModule({
   declarations: [
@@ -21,7 +15,6 @@ const routes: Routes = [
     DirectoryComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule
   ],

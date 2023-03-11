@@ -10,13 +10,19 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DirectoryComponent implements OnInit {
 
-    ninja: string;
+    classes={'blue': true, 'red': false, 'underline': true}
+    test: boolean = false
 
-    constructor(private route: ActivatedRoute){
-      this.ninja = route.snapshot.params['ninja']
+   clickHandler(){
+    this.test ? this.test = false : this.test = true
+   }
+     
+
+    constructor(){
+     
     }
 
-    
+
     ngOnInit() {
       
     }

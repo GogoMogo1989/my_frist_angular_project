@@ -1,2 +1,14 @@
-<p>directory works!</p>
-<p>{{ninja}}</p>
+<p [ngClass]="classes">
+    directory works!
+</p>
+
+
+<p *ngIf="test">only show the test is true</p>
+
+<button (click)="clickHandler()">Click</button>
+
+<style>
+    .blue{color:blue}
+    .red{color:red}
+    .underline{text-decoration: underline;}
+</style>
