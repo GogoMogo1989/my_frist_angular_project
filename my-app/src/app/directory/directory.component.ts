@@ -14,7 +14,11 @@ export class DirectoryComponent implements OnInit {
     test: boolean = false
 
    clickHandler(){
-    this.test ? this.test = false : this.test = true
+    if(this.test){
+      this.test = false
+    }else{
+      this.test = true
+    }
    }
      
 
